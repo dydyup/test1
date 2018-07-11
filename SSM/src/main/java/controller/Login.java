@@ -24,6 +24,12 @@ public class Login {
 	@Autowired
 	LoginService loginservice;
 	
+	/**
+	 * 登录方法
+	 * @param u
+	 * @param httpSession
+	 * @return
+	 */
 	@RequestMapping(value="/loginvalidate",method = RequestMethod.POST)
 	@ResponseBody
 	public MSG loginvalidate(@ModelAttribute User u,HttpSession httpSession){
