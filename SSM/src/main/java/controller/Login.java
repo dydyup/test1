@@ -41,6 +41,9 @@ public class Login {
 			return new MSG("error password");
 	}
 	
+	/**
+	 * 登录请求跳转登录页面
+	 */
 	@RequestMapping(value="/login",method = RequestMethod.GET)
 	public String login(){
 		return "/html/login.html";
